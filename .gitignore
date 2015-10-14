@@ -197,3 +197,4 @@ FakesAssemblies/
 
 # Sitecore Binaries
 Libraries/*.dll
+NuGet/lib

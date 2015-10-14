@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Transitus.Rainbow</id>
+        <version>1.0.0.0</version>
+        <title>Transitus.Rainbow</title>
+        <authors>Kern Herskind Nightingale,Jason Bert,Richard Seal</authors>
+        <owners>Fortis Collections</owners>
+        <licenseUrl>https://github.com/Fortis-Collection/transitus.rainbow/blob/master/LICENSE</licenseUrl>
+        <projectUrl>http://fortis.ws/fortis-collection/transitus.rainbow/</projectUrl>
+        <iconUrl>http://fortis.ws/wp-content/uploads/2014/11/Logo.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A library for deserializing Rainbow yaml item files into strongly typed objects. Ported from transitus.sitecore
+
+* Requires the Sitecore Kernel binary</description>
+        <releaseNotes />
+        <copyright>Copyright 2015</copyright>
+        <tags>Sitecore Transitus Fortis Unicorn Rainbow</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="Rainbow.Storage.Yaml" version="1.0.0" />
+            </group>
+        </dependencies>
+    </metadata>
+</package>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transitus.Rainbow", "Transitus.Rainbow\Transitus.Rainbow.csproj", "{FE03F316-5B86-49AB-BD2D-780F57D11639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transitus.Rainbow.Console", "..\Transitus.Rainbow.Console\Transitus.Rainbow.Console.csproj", "{3C866436-A4D1-44B1-AFF9-D0749E8237FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE03F316-5B86-49AB-BD2D-780F57D11639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE03F316-5B86-49AB-BD2D-780F57D11639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE03F316-5B86-49AB-BD2D-780F57D11639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE03F316-5B86-49AB-BD2D-780F57D11639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C866436-A4D1-44B1-AFF9-D0749E8237FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C866436-A4D1-44B1-AFF9-D0749E8237FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C866436-A4D1-44B1-AFF9-D0749E8237FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C866436-A4D1-44B1-AFF9-D0749E8237FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

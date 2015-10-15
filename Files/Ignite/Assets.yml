@@ -1,0 +1,27 @@
+﻿---
+ID: 1f443c63-bbc5-40f3-aee2-a7a70ea48f0d
+Parent: bed083b9-6f38-40b7-b54e-c00151b4ae81
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Ignite/Assets
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: Applications/16x16/folder_green.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: {D9AFFFBE-D870-4278-B4FB-825D12201C4D}
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {20068DF8-01C1-45F3-8AA9-AD492C2813B5}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150706T164741Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

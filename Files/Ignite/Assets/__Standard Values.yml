@@ -1,0 +1,32 @@
+﻿---
+ID: 20068df8-01c1-45f3-8aa9-ad492c2813b5
+Parent: 1f443c63-bbc5-40f3-aee2-a7a70ea48f0d
+Template: 1f443c63-bbc5-40f3-aee2-a7a70ea48f0d
+Path: /sitecore/templates/Ignite/Assets/__Standard Values
+SharedFields:
+- ID: 1172f251-dad4-4efb-a329-0c63500e4f1e
+  # __Masters
+  Type: TreelistEx
+  Value: |
+    {16469485-E00C-4470-A458-931D92E0552E}
+    {D59ADF75-E047-4BBF-8E76-8B9DD733C1EC}
+    {F21CA029-879E-4CD9-A5DB-C5D2D66DAAC5}
+    {FC95C32F-84E4-4A4D-A501-342D26B86B25}
+    {E9828587-24E6-478B-8778-C36FCC93C062}
+    {9AD48404-337A-49F3-870C-D78F0B0061E5}
+    {99137447-75E6-484B-836A-F816BDCEE0DC}
+    {2DD29D46-9E8C-423B-9382-C9B4CEB94B51}
+    {5A00F91A-3CD5-4825-A461-5A90F32FA41E}
+    {819792FA-0277-4196-9B3C-C49CCFFF7175}
+    {4B337F1A-C856-423E-B1F6-6B17FE164939}
+- ID: a791f095-2521-4b4d-bef9-21dda221f608
+  # __Style
+  Value: font-style:italic;color:#969696;font-size:11px;font-face:verdana;
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150706T164807Z

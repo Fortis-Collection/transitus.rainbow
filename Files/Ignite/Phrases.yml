@@ -1,0 +1,20 @@
+﻿---
+ID: aea96dff-6ad5-488d-bf32-e15657eee2d6
+Parent: bed083b9-6f38-40b7-b54e-c00151b4ae81
+Template: 0437fee2-44c9-46a6-abe9-28858d9fee8c
+Path: /sitecore/templates/Ignite/Phrases
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: Office/16x16/document_orientation_landscape.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140410T110134
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

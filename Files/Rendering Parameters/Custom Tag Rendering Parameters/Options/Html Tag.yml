@@ -1,0 +1,26 @@
+﻿---
+ID: 68964172-c9ed-4541-9f3d-fbf46fd2e49e
+Parent: cf73b1d7-1c8e-4c8f-9eda-fb0a0c1756aa
+Template: 455a3e98-a627-4b40-8035-e683a0331ac7
+Path: /sitecore/templates/User Defined/Shared/Content/Rendering Parameters/Custom Tag Rendering Parameters/Options/Html Tag
+SharedFields:
+- ID: 1eb8ae32-e190-44a6-968d-ed904c794ebf
+  # Source
+  Value: /sitecore/content/Global Content/Tag Options
+- ID: ab162cc0-dc80-4abf-8871-998ee5d7ba32
+  # Type
+  Value: Droptree
+- ID: b118496a-0f78-4a27-b55f-0a6c4b0b0fe1
+  # Default value
+  Value: {2F70E5E0-AC7E-4403-A2AB-0F44DB2AF917}
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150924T103239Z

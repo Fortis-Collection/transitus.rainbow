@@ -1,0 +1,13 @@
+﻿---
+ID: ad9048d8-aab1-4f65-92b4-8a3ab0b55a7c
+Parent: 813a77f9-58c3-4941-bd97-5bfce4727f4a
+Template: 813a77f9-58c3-4941-bd97-5bfce4727f4a
+Path: /sitecore/templates/Ignite/Phrases/Image Phrase/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20141021T105356

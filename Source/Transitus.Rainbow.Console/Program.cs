@@ -2,8 +2,13 @@
 
 namespace Transitus.Rainbow.Console
 {
+	using System.Collections.Generic;
+	using System.Linq;
+
 	class Program
 	{
+		const string BaseRenderingParametersTemplateId = "{E13DB450-F493-42D5-B1C1-536A57AED2A6}";
+
 		static void Main(string[] args)
 		{
 			System.Console.SetWindowSize(150, 40);
@@ -18,6 +23,8 @@ namespace Transitus.Rainbow.Console
 				var templateOutput = new StringBuilder();
 
 				templateOutput.AppendLine($"{template.Name.PadRight(20, ' ')} | {template.Path}");
+				templateOutput.AppendLine($"Type: {(HasRenderingOptionsBase(template.BaseTemplates, template.Id) ? "Rendering Parameters Template" : "Data Template") }");
+
 				templateOutput.AppendLine("Fields:");
 
 				foreach (var field in template.LocalFields)
@@ -31,6 +38,12 @@ namespace Transitus.Rainbow.Console
 			}
 
 			System.Console.ReadLine();
+		}
+
+		public static bool HasRenderingOptionsBase(IEnumerable<ITemplate> templateItems, string templateId)
+		{
+			var renderingParameterTemplateId = BaseRenderingParametersTemplateId.ToLower();
+			return templateId.ToLower() == renderingParameterTemplateId || templateItems.Any(t => t.Id.ToLower() == renderingParameterTemplateId);
 		}
 	}
 }

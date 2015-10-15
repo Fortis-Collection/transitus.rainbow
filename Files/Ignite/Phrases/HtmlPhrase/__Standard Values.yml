@@ -1,0 +1,13 @@
+﻿---
+ID: 345efcc6-4c38-47da-87d5-b7fb09706b9d
+Parent: 4ad20f42-1a7d-4973-96f9-dc37152d07da
+Template: 4ad20f42-1a7d-4973-96f9-dc37152d07da
+Path: /sitecore/templates/Ignite/Phrases/HtmlPhrase/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140814T151515

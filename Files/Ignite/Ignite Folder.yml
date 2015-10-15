@@ -1,0 +1,32 @@
+﻿---
+ID: d9afffbe-d870-4278-b4fb-825d12201c4d
+Parent: bed083b9-6f38-40b7-b54e-c00151b4ae81
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Ignite/Ignite Folder
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: Office/16x16/folder.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {C99768FE-5EF4-4A9A-A06B-F6F926391940}
+- ID: 9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4
+  # __Read Only
+  Value: 1
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {355E7E9A-8676-4323-9713-DC9D5EEDC5E2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140115T135825
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

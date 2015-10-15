@@ -1,0 +1,20 @@
+﻿---
+ID: 364503a7-21cf-4e4d-afc4-0dc455a8fd23
+Parent: 84a7c848-246d-4e21-9164-5b0efa1aac9d
+Template: e269fbb5-3750-427a-9149-7aa950b49301
+Path: /sitecore/templates/Ignite/Ignite Wildcard Template/Item Buckets
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: People/32x32/box_into.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150302T145842Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

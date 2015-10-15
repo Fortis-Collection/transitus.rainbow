@@ -1,0 +1,28 @@
+﻿---
+ID: 0507b140-4034-436b-ad07-7e6a069c89a9
+Parent: 84a7c848-246d-4e21-9164-5b0efa1aac9d
+Template: 84a7c848-246d-4e21-9164-5b0efa1aac9d
+Path: /sitecore/templates/Ignite/Ignite Wildcard Template/__Standard Values
+SharedFields:
+- ID: f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e
+  # __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{ACAA444A-3F4F-4747-A09D-9F724C9909FF}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 04bf00db-f5fb-41f7-8ab7-22408372a981
+      # __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{1CE5C2A4-7241-429D-9BB6-BEDFD835FE75}" />
+        </r>
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150302T165137Z

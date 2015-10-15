@@ -1,0 +1,20 @@
+﻿---
+ID: a563a6ed-0a54-4c16-8ac8-bbd6f827b79f
+Parent: c99768fe-5ef4-4a9a-a06b-f6f926391940
+Template: c99768fe-5ef4-4a9a-a06b-f6f926391940
+Path: /sitecore/templates/Ignite/Ignite Standard Template/__Standard Values
+SharedFields:
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 1999999
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140115T185859Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

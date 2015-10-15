@@ -1,0 +1,21 @@
+﻿---
+ID: fd1e4e54-5130-400a-8a7d-051cbdc72ec3
+Parent: 59a892a5-11fa-4f2a-9e84-99b56da2d294
+Template: 59a892a5-11fa-4f2a-9e84-99b56da2d294
+Path: /sitecore/templates/Ignite/Phrases/Phrase Dictionary/__Standard Values
+SharedFields:
+- ID: 1172f251-dad4-4efb-a329-0c63500e4f1e
+  # __Masters
+  Type: TreelistEx
+  Value: |
+    {4AD20F42-1A7D-4973-96F9-DC37152D07DA}
+    {A24644F1-7060-46C4-9ACD-B181ACB653F7}
+    {813A77F9-58C3-4941-BD97-5BFCE4727F4A}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140715T105425

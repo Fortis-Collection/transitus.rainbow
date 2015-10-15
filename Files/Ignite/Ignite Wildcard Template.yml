@@ -1,0 +1,27 @@
+﻿---
+ID: 84a7c848-246d-4e21-9164-5b0efa1aac9d
+Parent: bed083b9-6f38-40b7-b54e-c00151b4ae81
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Ignite/Ignite Wildcard Template
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: Office/32x32/organize_favorites.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: {C99768FE-5EF4-4A9A-A06B-F6F926391940}
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {0507B140-4034-436B-AD07-7E6A069C89A9}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150302T145751Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

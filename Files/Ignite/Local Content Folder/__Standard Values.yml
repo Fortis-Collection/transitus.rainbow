@@ -1,0 +1,20 @@
+﻿---
+ID: 1f746347-72eb-4ec3-831d-8feb535b3395
+Parent: cad3fc26-1b71-4fee-809b-acc0f05f6e6c
+Template: cad3fc26-1b71-4fee-809b-acc0f05f6e6c
+Path: /sitecore/templates/Ignite/Local Content Folder/__Standard Values
+SharedFields:
+- ID: 1172f251-dad4-4efb-a329-0c63500e4f1e
+  # __Masters
+  Type: TreelistEx
+  Value: |
+    {D9AFFFBE-D870-4278-B4FB-825D12201C4D}
+    {B5F5E686-FA8E-4B89-B9D9-50BC53168C1A}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150818T183708Z

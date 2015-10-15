@@ -1,5 +1,6 @@
 ﻿namespace Transitus.Rainbow
 {
+	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 
@@ -8,6 +9,8 @@
 
 	public class TemplateFactory : ITemplateFactory
 	{
+		protected string[] StringSeparators = { "\r\n" };
+
 		public IEnumerable<ITemplate> Create(IEnumerable<IItem> items)
 		{
 			var templateItems = this.GetTemplates(items);
@@ -37,7 +40,7 @@
 
 			foreach (var template in templates)
 			{
-				template.BaseTemplates = templates.Where(t => t.Id != template.Id && template.BaseTemplateIds.Contains(t.Id));
+				template.BaseTemplates = templates.Where(t => !IsIdEqual(t.Id, template.Id) && template.BaseTemplateIds.Contains(t.Id));
 			}
 
 			return templates;
@@ -58,13 +61,13 @@
 			{
 				baseTemplates.Add(item);
 
-				var baseTemplateField = item.SharedFields.FirstOrDefault(i => this.IsBaseTemplateField(i.Id));
+				var baseTemplateField = item.SharedFields.FirstOrDefault(i => IsBaseTemplateField(i.Id));
 
 				if (baseTemplateField != null)
 				{
-					foreach (var value in baseTemplateField.Value.Split('|'))
+					foreach (var value in baseTemplateField.Value.Split(StringSeparators, StringSplitOptions.None))
 					{
-						var baseTemplateItem = items.FirstOrDefault(i => i.Id == value);
+						var baseTemplateItem = items.FirstOrDefault(i => IsIdEqual(i.Id, value));
 
 						this.GetCombinedBaseTemplates(baseTemplateItem, baseTemplates, items);
 					}
@@ -74,7 +77,7 @@
 
 		public IEnumerable<string> GetBaseTemplatesIds(IItem templateItem, IEnumerable<IItem> combinedTemplateItems)
 		{
-			return combinedTemplateItems.Where(item => !string.Equals(item.Id, templateItem.Id)).Select(item => item.Id);
+			return combinedTemplateItems.Where(item => !IsIdEqual(item.Id, templateItem.Id)).Select(item => item.Id);
 		}
 
 		public IEnumerable<ITemplateField> GetFields(IEnumerable<IItem> sections, IEnumerable<IItem> items)
@@ -85,7 +88,7 @@
 			foreach (var fieldItem in fieldItems)
 			{
 				var typeName = fieldItem.SharedFields
-										.Where(f => string.Equals(f.Id, "{ab162cc0-dc80-4abf-8871-998ee5d7ba32}"))
+										.Where(f => IsIdEqual(f.Id, "{ab162cc0-dc80-4abf-8871-998ee5d7ba32}"))
 										.Select(i => i.Value)
 										.FirstOrDefault();
 
@@ -127,6 +130,11 @@
 		public bool IsTemplate(string id)
 		{
 			return new ID(id) == TemplateIDs.Template;
+		}
+
+		public bool IsIdEqual(string id, string comparedToId)
+		{
+			return id.Equals(comparedToId, StringComparison.InvariantCultureIgnoreCase);
 		}
 	}
 }

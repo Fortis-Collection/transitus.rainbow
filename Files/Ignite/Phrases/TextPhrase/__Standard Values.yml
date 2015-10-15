@@ -1,0 +1,16 @@
+﻿---
+ID: 153965cc-c7f5-43e7-b3c6-f94c9493d94c
+Parent: a24644f1-7060-46c4-9acd-b181acb653f7
+Template: a24644f1-7060-46c4-9acd-b181acb653f7
+Path: /sitecore/templates/Ignite/Phrases/TextPhrase/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140410T110625
+    - ID: 90a70834-30aa-40c5-82a8-b3d111f364e9
+      # Phrase
+      Value: $name

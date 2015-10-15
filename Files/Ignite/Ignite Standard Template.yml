@@ -1,0 +1,27 @@
+﻿---
+ID: c99768fe-5ef4-4a9a-a06b-f6f926391940
+Parent: bed083b9-6f38-40b7-b54e-c00151b4ae81
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Ignite/Ignite Standard Template
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: Applications/32x32/form_blue.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {A563A6ED-0A54-4C16-8AC8-BBD6F827B79F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140115T135759
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

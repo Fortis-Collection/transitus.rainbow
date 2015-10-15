@@ -1,0 +1,17 @@
+﻿---
+ID: c0517a55-15aa-4d5c-abd0-fd9df76020f3
+Parent: 88dd19f6-a03c-412c-ab52-5515342fc30d
+Template: 88dd19f6-a03c-412c-ab52-5515342fc30d
+Path: /sitecore/templates/Ignite/Ignite Bucket Template/__Standard Values
+SharedFields:
+- ID: d312103c-b36c-4ca5-864a-c85f9abda503
+  # __Is Bucket
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150302T171042Z

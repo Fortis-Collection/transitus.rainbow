@@ -1,0 +1,20 @@
+﻿---
+ID: 68b5ef6b-9437-4091-ba20-6b60b1ec777a
+Parent: 9fd16fba-49e7-4617-8687-dab961d9b283
+Template: 455a3e98-a627-4b40-8035-e683a0331ac7
+Path: /sitecore/templates/Ignite/Phrases/HtmlPhrase/Phrase Data/Phrase
+SharedFields:
+- ID: ab162cc0-dc80-4abf-8871-998ee5d7ba32
+  # Type
+  Value: Rich Text
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140410T110609

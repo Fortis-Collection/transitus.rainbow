@@ -1,0 +1,23 @@
+﻿---
+ID: 65155f21-de57-4677-b442-4f6ca492e58f
+Parent: 3d0cb1e8-468c-445e-868e-ae6386919ef7
+Template: 455a3e98-a627-4b40-8035-e683a0331ac7
+Path: /sitecore/templates/Ignite/Ignite Bucket Template/Item Buckets/Item Buckets Wildcard Token
+SharedFields:
+- ID: 1eb8ae32-e190-44a6-968d-ed904c794ebf
+  # Source
+  Value: /sitecore/system/Modules/Wildcards/Tokens
+- ID: ab162cc0-dc80-4abf-8871-998ee5d7ba32
+  # Type
+  Value: Droplink
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20150302T150122Z

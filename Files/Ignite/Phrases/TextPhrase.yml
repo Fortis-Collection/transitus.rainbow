@@ -1,0 +1,27 @@
+﻿---
+ID: a24644f1-7060-46c4-9acd-b181acb653f7
+Parent: aea96dff-6ad5-488d-bf32-e15657eee2d6
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Ignite/Phrases/TextPhrase
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: applications/32x32/text_rich.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: {DC9FA523-7F26-44F7-96A5-E4FF9B64658A}
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {153965CC-C7F5-43E7-B3C6-F94C9493D94C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140410T110448
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

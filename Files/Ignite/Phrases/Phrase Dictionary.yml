@@ -1,0 +1,30 @@
+﻿---
+ID: 59a892a5-11fa-4f2a-9e84-99b56da2d294
+Parent: aea96dff-6ad5-488d-bf32-e15657eee2d6
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Ignite/Phrases/Phrase Dictionary
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: Business/32x32/codes_of_law.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: {D9AFFFBE-D870-4278-B4FB-825D12201C4D}
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 200
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {FD1E4E54-5130-400A-8A7D-051CBDC72EC3}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140715T105304
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

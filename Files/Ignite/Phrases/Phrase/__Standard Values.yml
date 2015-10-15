@@ -1,0 +1,13 @@
+﻿---
+ID: e85ee110-0357-40ac-9a88-ec7bc6656949
+Parent: dc9fa523-7f26-44f7-96a5-e4ff9b64658a
+Template: dc9fa523-7f26-44f7-96a5-e4ff9b64658a
+Path: /sitecore/templates/Ignite/Phrases/Phrase/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20140814T151055

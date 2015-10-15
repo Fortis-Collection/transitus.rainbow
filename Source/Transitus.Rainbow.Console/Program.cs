@@ -15,7 +15,8 @@ namespace Transitus.Rainbow.Console
 
 			var folderDeserializer = TransitusProvider.FolderDeserializer;
 			var templateFactory = TransitusProvider.TemplateFactory;
-			var items = folderDeserializer.Deserialize(@"C:\Projects\transitus.rainbow\Files");
+
+			var items = folderDeserializer.Deserialize(@"C:\Projects\crtv-pokercentral.com\Unicorn\Default Configuration\Ignite");
 			var templates = templateFactory.Create(items);
 
 			foreach (var template in templates)

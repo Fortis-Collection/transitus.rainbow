@@ -87,6 +87,11 @@
 
 			foreach (var fieldItem in fieldItems)
 			{
+				if (fieldItem.SharedFields.Any() == false)
+				{
+					continue;
+				}
+
 				var typeName = fieldItem.SharedFields
 										.Where(f => IsIdEqual(f.Id, "{ab162cc0-dc80-4abf-8871-998ee5d7ba32}"))
 										.Select(i => i.Value)

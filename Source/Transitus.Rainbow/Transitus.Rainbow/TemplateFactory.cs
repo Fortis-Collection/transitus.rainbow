@@ -24,6 +24,7 @@
 				var localSections = this.GetLocalSections(templateItem, items);
 				var localFields = this.GetFields(localSections, items);
 				var baseTemplateIds = this.GetBaseTemplateIds(templateItem, combinedTemplateItems);
+
 				var template = new Template
 				{
 					Id = templateItem.Id,
@@ -32,7 +33,7 @@
 					Path = templateItem.ItemPath,
 					CombinedFields = combinedFields,
 					LocalFields = localFields,
-					BaseTemplateIds = baseTemplateIds
+					BaseTemplateIds = baseTemplateIds.Select(x => x.ToLowerInvariant())
 				};
 
 				templates.Add(template);
@@ -40,7 +41,9 @@
 
 			foreach (var template in templates)
 			{
-				template.BaseTemplates = templates.Where(t => !IsIdEqual(t.Id, template.Id) && template.BaseTemplateIds.Contains(t.Id));
+				template.BaseTemplates = templates.Where(t => !IsIdEqual(t.Id, template.Id) && template.BaseTemplateIds.Contains(t.Id.ToLower()));
+				//template.BaseTemplates =
+				//	templates.Where(t => template.BaseTemplateIds.Select(x => x.ToLowerInvariant()).Contains(t.Id.ToLowerInvariant()));
 			}
 
 			return templates;
@@ -88,7 +91,7 @@
 		{
 			if (string.IsNullOrWhiteSpace(itemId) == false && baseTemplateIds.All(i => IsIdEqual(i, itemId) == false))
 			{
-				baseTemplateIds.Add(itemId);
+				baseTemplateIds.Add(itemId.ToLowerInvariant());
 
 				var baseTemplateField = item?.SharedFields.FirstOrDefault(i => this.IsBaseTemplateField(i.Id));
 

@@ -23,7 +23,7 @@
 				var combinedFields = this.GetFields(combinedSections, items);
 				var localSections = this.GetLocalSections(templateItem, items);
 				var localFields = this.GetFields(localSections, items);
-				var baseTemplateIds = this.GetBaseTemplatesIds(templateItem, combinedTemplateItems);
+				var baseTemplateIds = this.GetBaseTemplateIds(templateItem, combinedTemplateItems);
 				var template = new Template
 				{
 					Id = templateItem.Id,
@@ -75,9 +75,35 @@
 			}
 		}
 
-		public IEnumerable<string> GetBaseTemplatesIds(IItem templateItem, IEnumerable<IItem> combinedTemplateItems)
+		public IEnumerable<string> GetBaseTemplateIds(IItem item, IEnumerable<IItem> items)
 		{
-			return combinedTemplateItems.Where(item => !IsIdEqual(item.Id, templateItem.Id)).Select(item => item.Id);
+			var baseTemplateIds = new List<string>();
+
+			this.GetBaseTemplatesIds(item, item.Id, baseTemplateIds, items);
+
+			return baseTemplateIds;
+		}
+
+		public IEnumerable<string> GetBaseTemplatesIds(IItem item, string itemId, IList<string> baseTemplateIds, IEnumerable<IItem> items)
+		{
+			if (string.IsNullOrWhiteSpace(itemId) == false && baseTemplateIds.All(i => IsIdEqual(i, itemId) == false))
+			{
+				baseTemplateIds.Add(itemId);
+
+				var baseTemplateField = item?.SharedFields.FirstOrDefault(i => this.IsBaseTemplateField(i.Id));
+
+				if (baseTemplateField != null)
+				{
+					foreach (var value in baseTemplateField.Value.Split(this.StringSeparators, StringSplitOptions.None))
+					{
+						var baseTemplateItem = items.FirstOrDefault(i => this.IsIdEqual(i.Id, value));
+
+						this.GetBaseTemplatesIds(baseTemplateItem, value, baseTemplateIds, items);
+					}
+				}
+			}
+
+			return baseTemplateIds;
 		}
 
 		public IEnumerable<ITemplateField> GetFields(IEnumerable<IItem> sections, IEnumerable<IItem> items)

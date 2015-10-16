@@ -16,7 +16,25 @@ namespace Transitus.Rainbow.Console
 			var folderDeserializer = TransitusProvider.FolderDeserializer;
 			var templateFactory = TransitusProvider.TemplateFactory;
 
-			var items = folderDeserializer.Deserialize(@"C:\Projects\crtv-pokercentral.com\Unicorn\Default Configuration\Ignite");
+			var myFolder = @"C:\Projects\crtv-pokercentral.com\Unicorn\Default Configuration";
+
+			var folders = new List<string>
+			{
+				myFolder + @"..\Ignite",
+				myFolder + @"..\User Defined",
+				myFolder + @"..\Media",
+				myFolder + @"..\MediaFramework"
+			};
+
+	var items = new List<IItem>();
+
+	foreach (var folder in folders)
+	{
+		var deserializedItems = Transitus.Rainbow.TransitusProvider.FolderDeserializer.Deserialize(folder);
+
+		items.AddRange(deserializedItems);
+	}
+
 			var templates = templateFactory.Create(items);
 
 			foreach (var template in templates)
@@ -24,7 +42,7 @@ namespace Transitus.Rainbow.Console
 				var templateOutput = new StringBuilder();
 
 				templateOutput.AppendLine($"{template.Name.PadRight(20, ' ')} | {template.Path}");
-				templateOutput.AppendLine($"Type: {(HasRenderingOptionsBase(template.BaseTemplates, template.Id) ? "Rendering Parameters Template" : "Data Template") }");
+				templateOutput.AppendLine($"Type: {(HasRenderingOptionsBase(template.BaseTemplateIds, template.Id) ? "Rendering Parameters Template" : "Data Template") }");
 
 				templateOutput.AppendLine("Fields:");
 
@@ -41,10 +59,10 @@ namespace Transitus.Rainbow.Console
 			System.Console.ReadLine();
 		}
 
-		public static bool HasRenderingOptionsBase(IEnumerable<ITemplate> templateItems, string templateId)
+		public static bool HasRenderingOptionsBase(IEnumerable<string> templateItemIds, string templateId)
 		{
 			var renderingParameterTemplateId = BaseRenderingParametersTemplateId.ToLower();
-			return templateId.ToLower() == renderingParameterTemplateId || templateItems.Any(t => t.Id.ToLower() == renderingParameterTemplateId);
+			return templateId.ToLower() == renderingParameterTemplateId || templateItemIds.Any(t => t.ToLower() == renderingParameterTemplateId);
 		}
 	}
 }
